@@ -160,6 +160,13 @@
                                                                 cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
                                                             timeoutInterval:60];
 	[request setValue:@"MWFeedParser" forHTTPHeaderField:@"User-Agent"];
+
+    if (self.headerRequest)
+    {
+        [self.headerRequest enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+            [request setValue:obj forHTTPHeaderField:key];
+        }];
+    }
 	
 	// Debug Log
 	MWLog(@"MWFeedParser: Connecting & downloading feed data");

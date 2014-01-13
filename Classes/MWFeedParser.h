@@ -108,6 +108,8 @@ typedef enum { FeedTypeUnknown, FeedTypeRSS, FeedTypeRSS1, FeedTypeAtom } FeedTy
 
 #pragma mark Public Properties
 
+@property (nonatomic,retain) NSDictionary* headerRequest;
+
 // Delegate to recieve data as it is parsed
 @property (nonatomic, assign) id <MWFeedParserDelegate> delegate;
 
