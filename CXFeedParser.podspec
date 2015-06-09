@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'NSString+XMLEntities' do |ss|
-    ss.source_files = 'Classes/NSString+XMLEntities.h{h,m}'
+    ss.source_files = 'Classes/NSString+XMLEntities.{h,m}'
     dependencies = 'MWFeedParser/NSString+HTML'
   end
 
