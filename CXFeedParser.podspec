@@ -9,23 +9,12 @@ Pod::Spec.new do |s|
   s.platform         =  :ios
   s.framework        =  'Foundation'
 
-  s.subspec 'NSString+HTML' do |ss|
-    ss.source_files = 'Classes/NSString+HTML.{h,m}', 'Classes/GTMNSString+HTML.{h,m}'
-  end
+  s.platform              = :ios,
+  s.ios.deployment_target = '7.0'
+  s.requires_arc          = true
 
-  s.subspec 'NSString+XMLEntities' do |ss|
-    ss.source_files = 'Classes/NSString+XMLEntities.{h,m}’, 'Classes/NSString+HTML.{h,m}', 'Classes/GTMNSString+HTML.{h,m}'
-  end
+  s.source_files = "Classes/**/*.{m,h,c}"
+  s.public_header_files = 'Classes/**/*.h'
+  s.dependency 'CTidy', '~> 0.3.1'
 
-  s.subspec 'NSDate+InternetDateTime' do |ss|
-    ss.source_files = 'Classes/NSDate+InternetDateTime.{h,m}'
-  end
-
-  s.subspec 'Feed' do |ss|
-    ss.source_files =  'Classes/MWFeedInfo.{h,m}', 'Classes/MWFeedItem.{h,m}', 'Classes/MWFeedParser.{h,m}', 'Classes/MWImageParser.{h,m}', 'Classes/MWFeedParser_Private.h’, 'Classes/NSString+HTML.{h,m}', 'Classes/GTMNSString+HTML.{h,m}'
-    ss.dependency = 'NSString+XMLEntities'
-    ss.dependency = 'NSDate+InternetDateTime'
-
-    ss.dependency 'CTidy', '~> 0.3.1'
-  end
 end
