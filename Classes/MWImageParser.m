@@ -71,9 +71,9 @@
 
     html = output.bp ? [NSString stringWithUTF8String:(char *)output.bp] : nil;
 
-    MWImageParser *parser = [[MWImageParser new] autorelease];
+    MWImageParser *parser = [MWImageParser new] ;
     parser.images = [NSMutableArray array];
-    parser.xmlParser = [[[NSXMLParser alloc] initWithData:[html dataUsingEncoding:NSUTF8StringEncoding]] autorelease];
+    parser.xmlParser = [[NSXMLParser alloc] initWithData:[html dataUsingEncoding:NSUTF8StringEncoding]];
     parser.xmlParser.delegate = parser;
     [parser.xmlParser parse];
     return parser.images;
