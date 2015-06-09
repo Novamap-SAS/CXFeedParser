@@ -578,47 +578,47 @@
 	
 }
 
-- (BOOL)processItemEntityWithCurrentPath:(NSString *)currentPath andProcessedText:(NSString *)processedText
+- (BOOL)processItemEntityWithCurrentPath:(NSString *)p_CurrentPath andProcessedText:(NSString *)processedText
 {
     // Item
-    if ([currentPath isEqualToString:@"/rss/channel/item/title"])
+    if ([p_CurrentPath isEqualToString:@"/rss/channel/item/title"])
     { if (processedText.length > 0)
         item.title = processedText; return YES; }
-    if ([currentPath isEqualToString:@"/rss/channel/item/link"])
+    if ([p_CurrentPath isEqualToString:@"/rss/channel/item/link"])
     { if (processedText.length > 0)
         item.link = processedText; return YES; }
-    if ([currentPath isEqualToString:@"/rss/channel/item/guid"])
+    if ([p_CurrentPath isEqualToString:@"/rss/channel/item/guid"])
     { if (processedText.length > 0)
         item.identifier = processedText; return YES; }
-    if ([currentPath isEqualToString:@"/rss/channel/item/description"])
+    if ([p_CurrentPath isEqualToString:@"/rss/channel/item/description"])
     { if (processedText.length > 0)
         item.summary = processedText; return YES; }
-    if ([currentPath isEqualToString:@"/rss/channel/item/content:encoded"])
+    if ([p_CurrentPath isEqualToString:@"/rss/channel/item/content:encoded"])
     { if (processedText.length > 0)
         item.content = processedText; return YES; }
-    if ([currentPath isEqualToString:@"/rss/channel/item/pubDate"])
+    if ([p_CurrentPath isEqualToString:@"/rss/channel/item/pubDate"])
     { if (processedText.length > 0)
         item.date = [NSDate dateFromInternetDateTimeString:processedText formatHint:DateFormatHintRFC822]; return YES; }
     
-    if ([currentPath isEqualToString:@"/rss/channel/item/dc:creator"])
+    if ([p_CurrentPath isEqualToString:@"/rss/channel/item/dc:creator"])
     { if (processedText.length > 0)
         item.creator = processedText; return YES; }
     
-    if ([currentPath isEqualToString:@"/rss/channel/item/enclosure"])
+    if ([p_CurrentPath isEqualToString:@"/rss/channel/item/enclosure"])
     { [self createEnclosureFromAttributes:currentElementAttributes andAddToItem:item]; return YES; }
-    if ([currentPath isEqualToString:@"/rss/channel/item/dc:date"])
+    if ([p_CurrentPath isEqualToString:@"/rss/channel/item/dc:date"])
     { if (processedText.length > 0)
         item.date = [NSDate dateFromInternetDateTimeString:processedText formatHint:DateFormatHintRFC3339]; return YES; }
     
     // Info
     if (feedParseType != ParseTypeItemsOnly) {
-        if ([currentPath isEqualToString:@"/rss/channel/title"])
+        if ([p_CurrentPath isEqualToString:@"/rss/channel/title"])
         { if (processedText.length > 0)
             info.title = processedText; return YES; }
-        if ([currentPath isEqualToString:@"/rss/channel/description"])
+        if ([p_CurrentPath isEqualToString:@"/rss/channel/description"])
         { if (processedText.length > 0)
             info.summary = processedText; return YES; }
-        if ([currentPath isEqualToString:@"/rss/channel/link"])
+        if ([p_CurrentPath isEqualToString:@"/rss/channel/link"])
         { if (processedText.length > 0)
             info.link = processedText; return YES; }
     }

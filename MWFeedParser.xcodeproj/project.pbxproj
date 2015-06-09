@@ -25,6 +25,7 @@
 		4CC8960B119F0CED00ED61B6 /* MWFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC89608119F0CED00ED61B6 /* MWFeedItem.m */; };
 		4CC8960F119F0CFB00ED61B6 /* NSString+XMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC8960E119F0CFB00ED61B6 /* NSString+XMLEntities.m */; };
 		4CC89612119F0D0C00ED61B6 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC89611119F0D0C00ED61B6 /* RootViewController.m */; };
+		CEF5D7781B26D6BA0022B1E8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF5D7771B26D6BA0022B1E8 /* Default-568h@2x.png */; };
 		D545364017124C9400411558 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D545363F17124C9400411558 /* libPods.a */; };
 		D5854E1214E1C59C00DEAE67 /* MWImageParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D5854E1114E1C59C00DEAE67 /* MWImageParser.m */; };
 		D5854E1A14E1CC9400DEAE67 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5854E1914E1CC9300DEAE67 /* SenTestingKit.framework */; };
@@ -52,7 +53,6 @@
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2AD53DE0A9724667B48618C3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		4C65F2E912085ACE00606CFC /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		4C65F2EA12085ACE00606CFC /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		4C65F316120863F800606CFC /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
@@ -75,7 +75,9 @@
 		4CC89611119F0D0C00ED61B6 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		5542BA37CA56497CAD251249 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1107310486CEB800E47090 /* MWFeedParser-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MWFeedParser-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		D545363F17124C9400411558 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		CE5F854E8A5E9755AF9392D4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CEF5D7771B26D6BA0022B1E8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D545363F17124C9400411558 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		D5854E1014E1C59C00DEAE67 /* MWImageParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWImageParser.h; sourceTree = "<group>"; };
 		D5854E1114E1C59C00DEAE67 /* MWImageParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWImageParser.m; sourceTree = "<group>"; };
 		D5854E1814E1CC9300DEAE67 /* MWFeedParserTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MWFeedParserTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 		D5854E2414E1CC9400DEAE67 /* MWFeedParserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWFeedParserTests.m; sourceTree = "<group>"; };
 		D5854E2614E1CC9400DEAE67 /* MWFeedParserTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MWFeedParserTests-Prefix.pch"; sourceTree = "<group>"; };
 		D5854E2A14E1CD1700DEAE67 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = samples; sourceTree = "<group>"; };
+		EEFC40B95248F8F989F41884 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				CEF5D7771B26D6BA0022B1E8 /* Default-568h@2x.png */,
 				D545363F17124C9400411558 /* libPods.a */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -143,7 +147,7 @@
 				D5854E1D14E1CC9400DEAE67 /* MWFeedParserTests */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				2AD53DE0A9724667B48618C3 /* Pods.xcconfig */,
+				65A805B8DC7BC1B6D3DFCFE3 /* Pods */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -240,6 +244,15 @@
 			name = App;
 			sourceTree = "<group>";
 		};
+		65A805B8DC7BC1B6D3DFCFE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEFC40B95248F8F989F41884 /* Pods.debug.xcconfig */,
+				CE5F854E8A5E9755AF9392D4 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D5854E1D14E1CC9400DEAE67 /* MWFeedParserTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,7 +319,8 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Michael Waterfall";
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MWFeedParser" */;
@@ -336,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				CEF5D7781B26D6BA0022B1E8 /* Default-568h@2x.png in Resources */,
 				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
 				4C661F8B125E50FA007F1792 /* Icon.png in Resources */,
 			);
@@ -365,7 +380,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 		};
 		D5854E1614E1CC9300DEAE67 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -432,7 +447,7 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AD53DE0A9724667B48618C3 /* Pods.xcconfig */;
+			baseConfigurationReference = EEFC40B95248F8F989F41884 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -441,7 +456,7 @@
 				GCC_PREFIX_HEADER = MWFeedParser_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "MWFeedParser-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = MWFeedParser;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = NO;
@@ -450,14 +465,14 @@
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AD53DE0A9724667B48618C3 /* Pods.xcconfig */;
+			baseConfigurationReference = CE5F854E8A5E9755AF9392D4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MWFeedParser_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "MWFeedParser-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = MWFeedParser;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = NO;
@@ -467,12 +482,12 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -480,7 +495,6 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -493,7 +507,6 @@
 		};
 		D5854E2814E1CC9400DEAE67 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AD53DE0A9724667B48618C3 /* Pods.xcconfig */;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -521,7 +534,6 @@
 		};
 		D5854E2914E1CC9400DEAE67 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AD53DE0A9724667B48618C3 /* Pods.xcconfig */;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
