@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             =  'CXFeedParser'
-  s.version          =  ‘0.1.3.Nova'
+  s.version          =  '0.1.3.Nova'
   s.license          =  'MIT'
   s.summary          =  'An Objective-C RSS / Atom Feed Parser for iOS.'
   s.homepage         =  'https://github.com/vgrichina/CXFeedParser'
