@@ -14,8 +14,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'NSString+XMLEntities' do |ss|
-    ss.source_files = 'Classes/NSString+XMLEntities.{h,m}' 
-    ss.dependency = 'CXFeedParser/NSString+HTML'
+    ss.source_files = 'Classes/NSString+XMLEntities.{h,m}’, 'Classes/NSString+HTML.{h,m}', 'Classes/GTMNSString+HTML.{h,m}'
   end
 
   s.subspec 'NSDate+InternetDateTime' do |ss|
@@ -23,10 +22,9 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Feed' do |ss|
-    ss.source_files =  'Classes/MWFeedInfo.{h,m}', 'Classes/MWFeedItem.{h,m}', 'Classes/MWFeedParser.{h,m}', 'Classes/MWImageParser.{h,m}', 'Classes/MWFeedParser_Private.h'
+    ss.source_files =  'Classes/MWFeedInfo.{h,m}', 'Classes/MWFeedItem.{h,m}', 'Classes/MWFeedParser.{h,m}', 'Classes/MWImageParser.{h,m}', 'Classes/MWFeedParser_Private.h’, 'Classes/NSString+HTML.{h,m}', 'Classes/GTMNSString+HTML.{h,m}'
     ss.dependency = 'NSString+XMLEntities'
     ss.dependency = 'NSDate+InternetDateTime'
-    ss.dependency = 'CXFeedParser/NSString+HTML'
 
     ss.dependency 'CTidy', '~> 0.3.1'
   end
