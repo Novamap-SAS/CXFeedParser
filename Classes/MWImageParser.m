@@ -73,9 +73,18 @@
 
     MWImageParser *parser = [MWImageParser new] ;
     parser.images = [NSMutableArray array];
-    parser.xmlParser = [[NSXMLParser alloc] initWithData:[html dataUsingEncoding:NSUTF8StringEncoding]];
-    parser.xmlParser.delegate = parser;
-    [parser.xmlParser parse];
+    
+    dispatch_queue_t reentrantAvoidanceQueue = dispatch_queue_create("reentrantAvoidanceQueue", DISPATCH_QUEUE_SERIAL);
+    dispatch_async(reentrantAvoidanceQueue, ^{
+        parser.xmlParser = [[NSXMLParser alloc] initWithData:[html dataUsingEncoding:NSUTF8StringEncoding]];
+        parser.xmlParser.delegate = parser;
+        if (![parser.xmlParser parse]) {
+            NSLog(@"There was an error=%@ parsing the xml. with data %@", [parser.xmlParser parserError], html);
+        }
+    });
+    dispatch_sync(reentrantAvoidanceQueue, ^{
+        
+    });
     return parser.images;
 }
 
